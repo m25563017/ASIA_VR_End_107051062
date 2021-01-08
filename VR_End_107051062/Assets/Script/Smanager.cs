@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;   // 引用 介面 API
 
-public class ScoreManager : MonoBehaviour
+public class Smanager : MonoBehaviour
 {
     [Header("分數介面")]
     public Text textScore;
@@ -27,8 +27,9 @@ public class ScoreManager : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // 如果 碰撞物件的標籤 為 籃球 就加分 並且 籃球 的 高度 > 2.5
-        if (other.tag == "Ball" )
+        if (other.tag == "Ball")
         {
+            print(0);
             AddScore();
         }
         // 如果 碰撞的根物件名稱為 Player
@@ -39,7 +40,7 @@ public class ScoreManager : MonoBehaviour
         }
     }
 
-    
+
 
     /// <summary>
     /// 加分數

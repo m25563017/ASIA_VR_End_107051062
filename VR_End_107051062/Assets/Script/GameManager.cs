@@ -5,7 +5,7 @@ public class GameManager : MonoBehaviour
     
     public void RestartGame()
     {
-        SceneManager.LoadScene("好友九宮格");
+        SceneManager.LoadScene(0);
     }
 
     
